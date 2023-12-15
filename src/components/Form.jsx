@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import "./Form.css"
 
 function Form({getRef}){
     const refName = useRef(null)
@@ -8,8 +9,9 @@ function Form({getRef}){
         getRef(refName.current.value)
     }
     return<>
-        <h3>Form </h3>
-        <form onSubmit={formHandler}>
+        <fieldset>
+        <legend>Form</legend>
+        <form onSubmit={formHandler} id="form">
             <label htmlFor="email">Email</label>
             <input type="email" placeholder="email" id="email"  />
             <br></br>
@@ -28,6 +30,8 @@ function Form({getRef}){
             <input type="submit" />
 
         </form>
+        </fieldset>
+        
     </>
 }
 

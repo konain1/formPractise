@@ -1,0 +1,13 @@
+#form{
+    height: 400px;
+    width: 300px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#form input {
+    width: 80%;
+    border-radius: 20px;
+}
